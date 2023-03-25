@@ -1,0 +1,150 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hanalei&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(132deg, #0e4625, #eb2812);
+  background-size: 700% 400%;
+  animation: BackgroundGradient 15s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.menu-de-navegacion {
+  width: 100%;
+  height: 200%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-de-navegacion img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.menu {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+  margin-right: 70px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+a:hover::after {
+  transform: scaleX(1);
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+a:hover {
+  color: white;
+}
+
+.name {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: antiquewhite;
+  font-size: 100px;
+  
+  font-family: "Hanalei", cursive;
+  
+}
+.img {
+  width: 200px;
+  height: 200px;
+}
+
+.main {
+  width: 100%;
+  height: 700px;
+  display: grid;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.imagen {
+  width: 500px;
+  height: 400px;
+}
+
+#conteItemCarrusel {
+  height: 400px;
+
+  overflow: hidden;
+}
+
+.itemCarrusel {
+  height: 100%;
+  position: relative;
+}
+
+.tarjetaCarrusel {
+  height: 100%;
+}
+
+.flechasCarrusel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contactos {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
